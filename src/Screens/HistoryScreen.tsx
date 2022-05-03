@@ -7,7 +7,7 @@ const HistoryScreen = () => {
   const appContext = useAppContext();
 
   return (
-    <View>
+    <View style={styles.View}>
       <ScrollView>
         {appContext.moodList
           .slice()
@@ -22,4 +22,8 @@ const HistoryScreen = () => {
 
 export default HistoryScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  View: {
+    flex: 1,
+  },
+});
